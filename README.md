@@ -8,7 +8,7 @@ This submod adds a modern and stylish kitchen for you and Monika.
 
 ## Instructions:
 
-1. Go to the "Releases" tab on the right this webpage (or click [HERE](https://github.com/tw4449/Custom-Room-Kithcne/releases)), then click on the latest version of "Kitchen.zip". It should begin automatically downloading.
+1. Go to the "Releases" tab on the right this webpage (or click [HERE](https://github.com/tw4449/Custom-Room-Kitchen/releases)), then click on the latest version of "Kitchen.zip". It should begin automatically downloading.
 2. Unzip and open the folder called 'Kitchen' (it should be in your 'Downloads' folder).
 3. From the kitchen folder, copy the 'game' and 'lib' folders into the main 
    'Doki Doki Literature Club' folder (AKA, the folder where you see 'DDLC.exe').
