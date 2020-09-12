@@ -55,7 +55,7 @@ init -1 python:
 
         # mapping of filters to MASWeatherMaps
         MASFilterWeatherMap(
-            #NOTE: IF ANY OF THESE DON'T HAVE A CORRESPONDING IMAGE AND WISH TO USE THE SAME IMAGE AS CLEAR WEATHER USES, JUST DON'T INCLUDE THE PRECIP TYPE AT ALL
+
             day=MASWeatherMap({
                 store.mas_weather.PRECIP_TYPE_DEF: "submod_background_Kitchen_day",
                 store.mas_weather.PRECIP_TYPE_RAIN: "submod_background_Kitchen_rain",
@@ -171,9 +171,9 @@ init -2 python in mas_background:
 label Kitchen_switch_dlg:
     python:
         switch_quip = renpy.substitute(renpy.random.choice([
-             "Are you hungry, [player]?",
-             "A snack sounds nice~",
-             "I wonder if I should make cupcakes...",
+            "Are you hungry, [player]?",
+            "A snack sounds nice~",
+            "I wonder if I should make cupcakes...",
         ]))
 
     m 1hua "[switch_quip]"
@@ -182,9 +182,9 @@ label Kitchen_switch_dlg:
 label return_switch_dlg:
     python:
         switch_quip = renpy.substitute(renpy.random.choice([
-             "Just the two of us~",
-             "Miss the classic look?",
-             "Brings back memories...",
+            "Just the two of us~",
+            "Miss the classic look?",
+            "Brings back memories...",
         ]))
 
     m 1hua "[switch_quip]"
@@ -193,10 +193,11 @@ label return_switch_dlg:
 init 5 python:
     addEvent(
         Event(
-           persistent.event_database,
-           eventlabel="bg_room_installed",
-           conditional="True",
-           action=EV_ACT_QUEUE
+            persistent.event_database,
+            eventlabel="bg_room_installed",
+            conditional="True",
+            action=EV_ACT_QUEUE,
+            aff_range=(mas_aff.ENAMORED, None)
         )
     )
 
@@ -276,7 +277,6 @@ init 1 python:
     config.label_overrides["mas_reaction_cupcake"] = "mas_reaction_cupcake_override"
 
 label mas_reaction_cupcake_override:
-
     m 1wud "Is that a...cupcake?"
     m 3hub "Wow, thanks [player]!"
     m 3euc "Come to think of it, I've been meaning to make some cupcakes myself."
