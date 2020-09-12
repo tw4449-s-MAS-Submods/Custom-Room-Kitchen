@@ -29,6 +29,7 @@ I have other rooms available! You can find them here:
 
 -[Den](https://github.com/tw4449/Custom-Room-Den)
 
+Or if you want them all visit the [Location Selector Main Repository](https://github.com/tw4449/tw4449-Location-Selector-Main-Repository)
 
 ## Troubleshooting:
 
