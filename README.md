@@ -1,3 +1,4 @@
+![Kitchen](https://preview.redd.it/m8i1qy8u9qm51.png?width=1920&format=png&auto=webp&s=c0cd29f8f0165f91c01696a274500b59be58ea31)
 # Custom-Room-Kitchen
 This submod adds a modern and stylish kitchen for you and Monika.
 
@@ -8,11 +9,11 @@ This submod adds a modern and stylish kitchen for you and Monika.
 
 ## Instructions:
 
-1. Go to the "Releases" tab on the right this webpage (or click [HERE](https://github.com/tw4449/Custom-Room-Kitchen/releases)), then click on the latest version of "Kitchen.zip". It should begin automatically downloading.
-2. Unzip and open the folder called 'Kitchen' (it should be in your 'Downloads' folder).
-3. From the kitchen folder, copy the 'game' and 'lib' folders into the main
+1. Go to the "Releases" tab on the right this webpage(or click [HERE](https://github.com/tw4449/Custom-Room-Furnished_Spaceroom_V3/releases)), then click on the latest version of "Custom Room Kitchen". To download click on Source code (zip) to begin .
+2. Unzip and open the folder called 'Custom-Room-Kitchen' (it should be in your 'Downloads' folder).
+3. From the Custom-Room-Kitchen folder, copy the 'game' and 'lib' folders into the main
    'Doki Doki Literature Club' folder (AKA, the folder where you see 'DDLC.exe').
-4. Launch MAS, and the room should be available. Monika will explain how to use it after a minute or so.
+4. If you have 400+ affection: Launch MAS, and the room will be available. Monika will explain how to use it after a minute or so. If you have less than 400 affection: Launch MAS, and Monika should comment you added it, but you can't use it just yet. Once you reach 400 affection, you can find the room under "Hey, Monika..." > "Location" > "Can we go somewhere else?".
 
 And that's it! It's that simple.
 
@@ -34,6 +35,9 @@ I have other rooms available! You can find them here:
 -If the rooms don't show up or if you get an error, most likely the files weren't placed correctly. Repeat
    step 3, making sure to put the "game" and "lib" folders directly into the main "Doki Doki Literature Club"
    folder.
+
+-Alternately, if the room hasn't shown up but Monika commented on it, you may not have 400 affection. You can check your 
+   affection level in your files at: 'Doki Doki Literature Club'>'log'>'aff_log.txt'
 
 -If the problem persists, there may another issue with your install of MAS. Go to the "issues" tab on this
    webpage and see if anyone else has had the same issue, and try any solutions posted there. If not, leave a
