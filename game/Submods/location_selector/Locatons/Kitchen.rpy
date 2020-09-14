@@ -281,8 +281,11 @@ label mas_reaction_cupcake_override:
     m 3hub "Wow, thanks [player]!"
     m 3euc "Come to think of it, I've been meaning to make some cupcakes myself."
     m 1eua "I wanted to learn how to bake good pastries like Natsuki did."
-    m 1hksdrb "Buuut I still haven't made much progress, even with the kitchen you added."
-    m 1eub "Give me some time, though, and I'm sure I can learn."
+
+    if mas_isMoniAff(lower=True):
+        m 1rksdlb "Buuut I still haven't figured out how to use that code you added!"
+        m 3eka "I'm sure I'll figure it out soon, [player]~"
+
     m 3hua "Would be nice to have another hobby other than writing, ehehe~"
     $ mas_receivedGift("mas_reaction_cupcake")
     $ store.mas_filereacts.delete_file(mas_getEVLPropValue("mas_reaction_cupcake", "category"))
