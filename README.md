@@ -1,3 +1,4 @@
+![Kitchen](https://preview.redd.it/m8i1qy8u9qm51.png?width=1920&format=png&auto=webp&s=c0cd29f8f0165f91c01696a274500b59be58ea31)
 # Custom-Room-Kitchen
 This submod adds a modern and stylish kitchen for you and Monika.
 
