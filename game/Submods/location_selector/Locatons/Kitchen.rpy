@@ -4,7 +4,7 @@ init -990 python:
         author="tw4449 Cdino112 multimokia d3adpan Booplicate",
         name="Custom Room Kitchen",
         description="This submod adds a modern and stylish kitchen for you and Monika.",
-        version="1.0.5."
+        version="1.0.5.2"
     )
 
 # Register the updater
