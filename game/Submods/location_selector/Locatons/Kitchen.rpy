@@ -4,7 +4,7 @@ init -990 python:
         author="tw4449 Cdino112 multimokia d3adpan Booplicate",
         name="Custom Room Kitchen",
         description="This submod adds a modern and stylish kitchen for you and Monika.",
-        version="1.0.5.2"
+        version="1.0.6"
     )
 
 # Register the updater
@@ -46,6 +46,31 @@ image submod_background_Kitchen_rain_ss = "mod_assets/location/Kitchen/kitchen_r
 image submod_background_Kitchen_overcast_ss = "mod_assets/location/Kitchen/kitchen_overcast-ss.png"
 image submod_background_Kitchen_snow_ss = "mod_assets/location/Kitchen/kitchen_snow-ss.png"
 
+##DECO
+image kitchen_o31_deco = ConditionSwitch(
+    "mas_current_background.isFltDay()", "mod_assets/location/Kitchen/deco/o31/deco.png",
+    "True", "mod_assets/location/Kitchen/deco/o31/deco-n.png"
+)
+
+image kitchen_d25_deco = ConditionSwitch(
+    "mas_current_background.isFltDay()", "mod_assets/location/Kitchen/deco/d25/deco.png",
+    "True", "mod_assets/location/Kitchen/deco/d25/deco-n.png"
+)
+
+init 501 python:
+    MASImageTagDecoDefinition.register_img(
+        "mas_o31_wall_bats",
+        submod_background_Kitchen.background_id,
+        MASAdvancedDecoFrame(zorder=5),
+        replace_tag="kitchen_o31_deco"
+    )
+
+    MASImageTagDecoDefinition.register_img(
+        "mas_d25_tree",
+        submod_background_Kitchen.background_id,
+        MASAdvancedDecoFrame(zorder=5),
+        replace_tag="kitchen_d25_deco"
+    )
 
 init -1 python:
     submod_background_Kitchen = MASFilterableBackground(
@@ -326,7 +351,7 @@ label monika_players_control_override:
 
     $ persistent._seen_ever["monika_players_control"] = True
     return
-    
+
 
 init 1 python:
     config.label_overrides["monika_gotomonika"] = "monika_gotomonika_override"
