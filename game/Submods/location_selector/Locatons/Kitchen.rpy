@@ -4,7 +4,7 @@ init -990 python:
         author="tw4449 Cdino112 multimokia d3adpan Booplicate",
         name="Custom Room Kitchen",
         description="This submod adds a modern and stylish kitchen for you and Monika.",
-        version="1.0.7"
+        version="1.0.8"
     )
 
 # Register the updater
@@ -57,6 +57,24 @@ image kitchen_d25_deco = ConditionSwitch(
     "True", "mod_assets/location/Kitchen/deco/d25/deco-n.png"
 )
 
+#image KI_mas_d25_lights = ConditionSwitch(
+#    "mas_isNightNow()", ConditionSwitch(
+#        "persistent._mas_disable_animations", "mod_assets/Kitchen/deco/d25/KI_lights_on_1.png",
+#        "not persistent._mas_disable_animations", "KI_mas_d25_night_lights_atl"
+#    ),
+#    "True", MASFilterSwitch("mod_assets/location/Kitchen/deco/d25/KI_lights_off.png")
+#)
+
+#image KI_mas_d25_night_lights_atl:
+#    block:
+#        "mod_assets/location/Kitchen/deco/d25/KI_lights_on_1.png"
+#        0.5
+#        "mod_assets/location/Kitchen/deco/d25/KI_lights_on_2.png"
+#        0.5
+#        "mod_assets/location/Kitchen/deco/d25/KI_lights_on_3.png"
+#        0.5
+#    repeat
+
 init 501 python:
     MASImageTagDecoDefinition.register_img(
         "mas_o31_wall_bats",
@@ -71,6 +89,13 @@ init 501 python:
         MASAdvancedDecoFrame(zorder=5),
         replace_tag="kitchen_d25_deco"
     )
+
+#    MASImageTagDecoDefinition.register_img(
+#        "mas_d25_lights",
+#        submod_background_Kitchen.background_id,
+#        MASAdvancedDecoFrame(zorder=5),
+#        replace_tag="KI_mas_d25_lights"
+#    )
 
 init -1 python:
     submod_background_Kitchen = MASFilterableBackground(
