@@ -59,7 +59,7 @@ image kitchen_d25_deco = ConditionSwitch(
 
 #image KI_mas_d25_lights = ConditionSwitch(
 #    "mas_isNightNow()", ConditionSwitch(
-#        "persistent._mas_disable_animations", "mod_assets/Kitchen/deco/d25/KI_lights_on_1.png",
+#        "persistent._mas_disable_animations", "mod_assets/location/Kitchen/deco/d25/KI_lights_on_1.png",
 #        "not persistent._mas_disable_animations", "KI_mas_d25_night_lights_atl"
 #    ),
 #    "True", MASFilterSwitch("mod_assets/location/Kitchen/deco/d25/KI_lights_off.png")
